@@ -12,7 +12,7 @@ public class Manipulate {
     private static final String MIN = " min";
     private Double duration = 0.0;
 
-    public void getTracklist(List<Track> tracklist) {
+    public void getTrackList(List<Track> tracklist) {
         for (Track t : tracklist) out.println(t.toString());
         out.println();
     }

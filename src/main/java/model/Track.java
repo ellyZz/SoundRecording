@@ -4,12 +4,12 @@ import model.enums.MusicStyle;
 
 import java.util.Objects;
 
-public abstract class Track {
+public class Track {
     private String name;
     private double duration;
     private MusicStyle style;
 
-    protected Track(String name, double duration, MusicStyle style) {
+    public Track(String name, double duration, MusicStyle style) {
         this.name = name;
         this.duration = duration;
         this.style = style;
@@ -54,7 +54,7 @@ public abstract class Track {
 
     @Override
     public String toString() {
-        return "Track{" +
+        return "Track {" +
                 "name='" + name + '\'' +
                 ", duration=" + duration +
                 ", style=" + style +
