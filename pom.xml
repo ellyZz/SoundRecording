@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>TestProjectException</module>
-        <module>TestExpection</module>
+
+        <module>TestException</module>
+        <module>WorkWithFile</module>
     </modules>
 
     <properties>
