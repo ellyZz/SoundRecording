@@ -8,9 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
 
 public class TestFile {
-
     public static void main(String[] args) {
-
         File mainPath = new File("C://test");
         if (!mainPath.exists()) {
             try {
@@ -32,23 +30,15 @@ public class TestFile {
             }
             File path = new File("C://test");
             File saveToFile = new File("C://test/Structure.txt");
-
             Collection<File> files = FileUtils.listFilesAndDirs(path, TrueFileFilter.TRUE, TrueFileFilter.TRUE);
-
             for (File file : files) {
                 System.out.println(file);
             }
-
-
             try {
                 FileUtils.writeLines(saveToFile, files);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         } else System.out.println("Remove folder 'test' from disk C");
-
-
     }
-
-
 }
