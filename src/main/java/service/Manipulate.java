@@ -9,29 +9,29 @@ import static java.lang.System.*;
 
 public class Manipulate {
     private static final String TOTAL_DURATION = "Total duration: ";
-    private static final String MIN = " min";
+    private static final String MIN = "min";
     private Double duration = 0.0;
 
-    public void getTrackList(List<Track> tracklist) {
-        for (Track t : tracklist) out.println(t.toString());
+    public void getTrackList(List<Track> trackList) {
+        for (Track t : trackList) out.println(t.toString());
         out.println();
     }
 
-    public void getTotalDuration(List<Track> tracklist) {
-        for (Track track : tracklist) {
+    public void getTotalDuration(List<Track> trackList) {
+        for (Track track : trackList) {
             duration += track.getDuration();
         }
         out.println(TOTAL_DURATION + duration + MIN);
         out.println();
     }
 
-    public void sortingByStyle(List<Track> tracklist, MusicStyle style) {
-        for (Track t : tracklist) {
+    public void sortingByStyle(List<Track> trackList, MusicStyle style) {
+        for (Track t : trackList) {
             if (t.getStyle() == style) {
                 out.println(t.toString());
             }
         }
-        for (Track t : tracklist) {
+        for (Track t : trackList) {
             if (t.getStyle() != style) {
                 out.println(t.toString());
             }
@@ -39,8 +39,8 @@ public class Manipulate {
         out.println();
     }
 
-    public void findByRange(Double from, Double to, List<Track> tracklist) {
-        for (Track track : tracklist) {
+    public void findByRange(Double from, Double to, List<Track> trackList) {
+        for (Track track : trackList) {
             if (track.getDuration() >= from && track.getDuration() <= to) {
                 out.println(track.toString());
             }

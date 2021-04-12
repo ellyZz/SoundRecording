@@ -39,6 +39,7 @@ public class Track {
         this.style = style;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
